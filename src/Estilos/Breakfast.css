@@ -1,0 +1,71 @@
+header{
+    height:80px;
+    width: 100%;
+    margin:0px;
+    background: linear-gradient(0deg, rgba(135, 126, 45, 0.3), rgba(135, 126, 45, 0.3)), #FF3742;
+}
+
+#coffeeHeaderText{
+    color:White;
+}
+
+#search{
+    background-color: white;
+    height: 20px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*Aquí estan metidas dos grandes secciones: la del meno y la cuenta */
+#menuAndOrderSection{
+ display:flex;
+ flex-wrap: wrap;
+ margin-top: 20px;
+}
+
+/*Esta es la seccion en donde se encuentran todos los elementos del menu*/
+#itemsBreakfastMenu{
+    display:flex;
+    flex-wrap: wrap;
+    width: 55%;
+}
+
+/*Estos son los elementos individuales del menu */
+.itemBreakfast{
+    background-color: #E4D1D1;
+    height:250px;
+    width:150px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.cost, h5{
+    font-size: 18px;
+    font-family: 'Nunito-VariableFont_wght.ttf';
+    text-align: center;
+    margin: 3px;
+}
+
+.addButton{
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    text-align: justify;
+}
+
+/*Imagenes*/
+.imgMenu{
+    width:125px;
+    height: 100px;
+    margin: 10px;
+}
+
+#order{
+    width: 45%;
+    height: auto;
+    background-color: #4B3C81;
+    color:white;
+}
