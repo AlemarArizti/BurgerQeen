@@ -1,8 +1,8 @@
-import '../Estilos/Breakfast.css';
+import '../Estilos/Dinner.css';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../Context/authContext';
 
-export default function HeaderBreakfast() {
+export default function HeaderDinner() {
   const navigate = useNavigate();
   const { logout } = useAuth();
   const handleLogout = async () => {
@@ -12,7 +12,7 @@ export default function HeaderBreakfast() {
   return (
     <div>
       <header>
-        <h1 id="coffeeHeaderText">It´s coffee time!</h1>
+        <h1 id="coffeeHeaderText">It´s dinner time!</h1>
         <input type="text" id="search" placeholder="Busca por producto..." />
         <button type="button" id="logOutB" onClick={handleLogout}>Log out</button>
       </header>

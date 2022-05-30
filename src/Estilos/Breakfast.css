@@ -1,4 +1,7 @@
 header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     height:80px;
     width: 100%;
     margin:0px;
@@ -11,13 +14,36 @@ header{
 
 #search{
     background-color: white;
-    height: 20px;
-    width: 150px;
+    height: 40px;
+    width: 250px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
-/*Aquí estan metidas dos grandes secciones: la del meno y la cuenta */
+/*Botones para elegir menu"*/
+.menuButtons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 30px;
+  border-radius: 20px;
+  border:none;
+  background-color: #DEDADA;
+  color: white;
+  font-weight: bold;
+}
+
+#dinnerB{
+    width: 150px;
+}
+
+.menuButtons:focus{
+ background-color: black;    
+}
+
+
+/*Aquí estan metidas dos grandes secciones: la del menu y la cuenta */
 #menuAndOrderSection{
  display:flex;
  flex-wrap: wrap;
@@ -47,22 +73,15 @@ header{
     margin: 3px;
 }
 
-.addButton, .removeButton{
-    width: 30px;
-    height: 30px;
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
-    text-align: justify;
-}
-
 /*Imagenes*/
 .imgMenu{
     width:125px;
     height: 100px;
     margin: 10px;
+    border-radius: 10px;
 }
 
+/*Order*/
 #orderSec{
     width: 530px;
     height: 800px;
@@ -74,10 +93,24 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 50px;
     background: linear-gradient(0deg, #4B3C81, #4B3C81), #2D3887;
    
+}
+#orderTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.addButton, .removeButton{
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
 }
 

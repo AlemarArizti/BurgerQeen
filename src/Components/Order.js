@@ -5,7 +5,7 @@ export default function Order() {
   return (
     <div>
       <section id="orderSec">
-        <h3>Orden</h3>
+        <h1 id="orderTitle">Orden</h1>
 
         <section className="itemOrder">
           <button type="button" className="removeButton">-</button>
