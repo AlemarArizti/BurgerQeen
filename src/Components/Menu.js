@@ -1,21 +1,23 @@
-import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../Context/authContext';
+import '../Estilos/Breakfast.css';
+// import '../Estilos/Menu.css';
+
+import Order from './Order';
+import HeaderBreakfast from './HeaderBreakfast';
+import Breakfast from './Breakfast';
 
 export default function SignIn() {
-  const navigate = useNavigate();
-  const { logout } = useAuth();
-
-  const handleLogout = async () => {
-    await logout();
-    navigate('/');
-  };
   return (
     <div>
-      <h1>Menu</h1>
-      <button type="button" id="breakfastB">Breakfast</button>
-      <button type="button" id="dinnerB">Dinner</button>
+      <HeaderBreakfast />
+      <section>
+        <button type="button" id="breakfastB">Breakfast</button>
+        <button type="button" id="dinnerB">Dinner</button>
+      </section>
 
-      <button type="button" id="logOutB" onClick={handleLogout}>Log out</button>
+      <section id="menuAndOrderSection">
+        <Breakfast />
+        <Order />
+      </section>
     </div>
 
   );

@@ -28,7 +28,7 @@ header{
 #itemsBreakfastMenu{
     display:flex;
     flex-wrap: wrap;
-    width: 55%;
+    width: 100%;
 }
 
 /*Estos son los elementos individuales del menu */
@@ -47,7 +47,7 @@ header{
     margin: 3px;
 }
 
-.addButton{
+.addButton, .removeButton{
     width: 30px;
     height: 30px;
     font-weight: bold;
@@ -63,9 +63,21 @@ header{
     margin: 10px;
 }
 
-#order{
-    width: 45%;
-    height: auto;
+#orderSec{
+    width: 530px;
+    height: 800px;
     background-color: #4B3C81;
     color:white;
 }
+
+.itemOrder{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(0deg, #4B3C81, #4B3C81), #2D3887;
+   
+}
+

@@ -1,0 +1,14 @@
+*{
+    display:flex;
+}
+
+#menuAndOrderSection{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#breakfastB{
+    width: 150px;
+    height: 50px;
+    background-color: #DEDADA;
+}
