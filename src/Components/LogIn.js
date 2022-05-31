@@ -1,9 +1,10 @@
 /* eslint-disable no-use-before-define */
-/* eslint-disable react/button-has-type */
+/* eslint-disable no-shadow */
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { useAuth } from '../Context/authContext';
 import '../Estilos/LogIn.css';
+import Logo from '../Assets/Logo/logofull-white.svg';
 
 export default function LogIn() {
   const [user, setUser] = useState({
@@ -25,7 +26,6 @@ export default function LogIn() {
     try {
       await login(user.email, user.password);
       navigate('/Menu');
-    // eslint-disable-next-line no-shadow
     } catch (error) {
       if (error.code === 'auth/wrong-password') {
         setError('La contraseña es incorrecta');
@@ -38,27 +38,25 @@ export default function LogIn() {
   };
 
   const navigate = useNavigate();
-  const handleSignIn = () => {
+  /* const handleSignIn = () => {
     navigate('/SignIn');
   };
+   <button type="button" id="SignInB" onClick={handleSignIn}>Sign In</button> */
   return (
-    <div className="App">
-
-      <section id="errorSec">
-        {error && <p className="error">{error}</p>}
-      </section>
-      <section>
+    <section id="loginContainer">
+      <section id="loginSection">
+        <img src={Logo} alt="Logo" className="imgMenu" id="logoLogin" />
+        <section id="errorSec">
+          {error && <p className="error">{error}</p>}
+        </section>
+        <h1 id="welcome">Bienvenide</h1>
+        <h2 id="welcomeText">Ingresa tus datos para acceder</h2>
         <form id="inputLogIn">
           <input type="text" className="input" id="mail" name="email" placeholder="E-mail" onChange={handleChange} />
           <input type="password" className="input" id="passwordLogin" name="password" placeholder="Password" onChange={handleChange} />
         </form>
+        <button type="button" id="loginButton" onClick={handleSubmit}>Entrar</button>
       </section>
-
-      <section id="buttonSect">
-        <button id="login" onClick={handleSubmit}>Login</button>
-        <button id="SignInB" onClick={handleSignIn}>Sign In</button>
-      </section>
-
-    </div>
+    </section>
   );
 }
