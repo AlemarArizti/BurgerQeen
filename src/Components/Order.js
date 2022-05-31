@@ -1,5 +1,5 @@
 // import { useNavigate } from 'react-router-dom';
-import '../Estilos/Breakfast.css';
+import '../Estilos/Order.css';
 
 export default function Order() {
   return (

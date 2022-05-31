@@ -20,18 +20,13 @@ header{
     border-radius: 15px;
 }
 
-/*Aquí estan metidas dos grandes secciones: la del menu y la cuenta */
-#menuAndOrderSection{
-    display:flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-   }
+
    
 /*Esta es la seccion en donde se encuentran todos los elementos del menu*/
 #itemsDinnerMenu{
     display:flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 60%;
 }
 
 /*Estos son los elementos individuales del menu */

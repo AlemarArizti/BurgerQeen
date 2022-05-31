@@ -1,14 +1,30 @@
-*{
-    display:flex;
-}
-
-#menuAndOrderSection{
+/*Botones para elegir menu"*/
+.menuButtons{
     display: flex;
-    flex-wrap: wrap;
-}
-
-#breakfastB{
-    width: 150px;
-    height: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    height: 30px;
+    border-radius: 20px;
+    border:none;
     background-color: #DEDADA;
-}
+    color: white;
+    font-weight: bold;
+  }
+  
+  #dinnerB{
+      width: 150px;
+  }
+  
+  .menuButtons:focus{
+   background-color: black;    
+  }
+  
+  
+  /*Aquí estan metidas dos grandes secciones: la del menu y la cuenta */
+  #menuAndOrderSection{
+   display:flex;
+   flex-wrap: wrap;
+   margin-top: 20px;
+  }
+

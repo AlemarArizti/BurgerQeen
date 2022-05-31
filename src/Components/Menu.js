@@ -1,3 +1,4 @@
+import '../Estilos/Menu.css';
 import Order from './Order';
 import HeaderBreakfast from './HeaderBreakfast';
 import Breakfast from './Breakfast';
