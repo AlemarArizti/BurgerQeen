@@ -1,11 +1,12 @@
 // import { useNavigate } from 'react-router-dom';
-import '../Estilos/Breakfast.css';
+import '../Estilos/Order.css';
 
 export default function Order() {
   return (
     <div>
-      <section id="order">
-        <h3>Orden</h3>
+      <section id="orderSec">
+        <h1 id="orderTitle">Haz clic aquí para agregar una nueva orden</h1>
+
       </section>
     </div>
   );
