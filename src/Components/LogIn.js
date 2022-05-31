@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { useAuth } from '../Context/authContext';
 import '../Estilos/LogIn.css';
+import Logo from '../Assets/Logo/logofull-white.svg';
 
 export default function LogIn() {
   const [user, setUser] = useState({
@@ -42,29 +43,20 @@ export default function LogIn() {
   };
    <button type="button" id="SignInB" onClick={handleSignIn}>Sign In</button> */
   return (
-    <div>
-      <section className="login">
+    <section id="loginContainer">
+      <section id="loginSection">
+        <img src={Logo} alt="Logo" className="imgMenu" id="logoLogin" />
         <section id="errorSec">
           {error && <p className="error">{error}</p>}
         </section>
-
-        <section id="welcome">
-          <h1>Bienvenide</h1>
-        </section>
-        <section id="welcomeText">
-          <h2>Ingresa tus datos para acceder</h2>
-        </section>
-        <section>
-          <form id="inputLogIn">
-            <input type="text" className="input" id="mail" name="email" placeholder="E-mail" onChange={handleChange} />
-            <input type="password" className="input" id="passwordLogin" name="password" placeholder="Password" onChange={handleChange} />
-          </form>
-        </section>
-
-        <section id="buttonSect">
-          <button type="button" id="loginButton" onClick={handleSubmit}>Login</button>
-        </section>
+        <h1 id="welcome">Bienvenide</h1>
+        <h2 id="welcomeText">Ingresa tus datos para acceder</h2>
+        <form id="inputLogIn">
+          <input type="text" className="input" id="mail" name="email" placeholder="E-mail" onChange={handleChange} />
+          <input type="password" className="input" id="passwordLogin" name="password" placeholder="Password" onChange={handleChange} />
+        </form>
+        <button type="button" id="loginButton" onClick={handleSubmit}>Entrar</button>
       </section>
-    </div>
+    </section>
   );
 }

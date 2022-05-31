@@ -1,34 +1,75 @@
-.login{
-margin-top:25%;
-margin-left:42%;
+body{
+    margin:0px;
+    padding:0px;
+}
+
+#loginContainer{
+   background-image: url(../Assets/login-bg.jpg);
+   background-image: no-repeat;
+   background-image: fixed;
+   background-image: center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 800px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#logoLogin{
+ width: 250px;
+ height: 250px;
+ margin: 0%;
+ padding: 0%;
 }
 
 #welcome{
- font-size: 25px;
+text-align: center;
+ font-size: 35px;
+ color:white;
 }
+
 #welcomeText{
- font-size: 12px;
- margin-top: 25px;
+ text-align: center;
+ font-size: 20px;
+ color:white;
+ margin-top:25px;
 }
 
 #inputLogIn{
-    width: 300px;
-    margin-top: 20px;
+width:300px;
 }
+
 .input{
  width:250px;
  height: 30px;
  border-radius: 45px;
  border:none;
- margin-top: 20px;
+ margin-top:25px;
+ margin-left:5%;
 }
 
 #loginButton{
-    width: 100px;
-    height: 25px;
+    width: 120px;
+    height: 30px;
     border-radius: 15px;
+    border: none;
     background-color: black;
     color: white;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top:30px;
+    text-align: center;
+    margin-left:25%;
+}
+
+::placeholder{
+    padding-left: 20px;
+}
+
+.error{
+    color:white;
+    text-align: center;
+    font-size: 25px;
 }

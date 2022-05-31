@@ -7,7 +7,7 @@ import Breakfast from './Breakfast';
 
 export default function SignIn() {
   return (
-    <div>
+    <body>
       <HeaderBreakfast />
 
       <section id="buttonsMenuSec">
@@ -19,7 +19,7 @@ export default function SignIn() {
         <Breakfast />
         <Order />
       </section>
-    </div>
+    </body>
 
   );
 }
