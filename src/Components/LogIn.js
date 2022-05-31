@@ -1,5 +1,5 @@
 /* eslint-disable no-use-before-define */
-/* eslint-disable react/button-has-type */
+/* eslint-disable no-shadow */
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { useAuth } from '../Context/authContext';
@@ -25,7 +25,6 @@ export default function LogIn() {
     try {
       await login(user.email, user.password);
       navigate('/Menu');
-    // eslint-disable-next-line no-shadow
     } catch (error) {
       if (error.code === 'auth/wrong-password') {
         setError('La contraseña es incorrecta');
@@ -38,27 +37,34 @@ export default function LogIn() {
   };
 
   const navigate = useNavigate();
-  const handleSignIn = () => {
+  /* const handleSignIn = () => {
     navigate('/SignIn');
   };
+   <button type="button" id="SignInB" onClick={handleSignIn}>Sign In</button> */
   return (
-    <div className="App">
+    <div>
+      <section className="login">
+        <section id="errorSec">
+          {error && <p className="error">{error}</p>}
+        </section>
 
-      <section id="errorSec">
-        {error && <p className="error">{error}</p>}
-      </section>
-      <section>
-        <form id="inputLogIn">
-          <input type="text" className="input" id="mail" name="email" placeholder="E-mail" onChange={handleChange} />
-          <input type="password" className="input" id="passwordLogin" name="password" placeholder="Password" onChange={handleChange} />
-        </form>
-      </section>
+        <section id="welcome">
+          <h1>Bienvenide</h1>
+        </section>
+        <section id="welcomeText">
+          <h2>Ingresa tus datos para acceder</h2>
+        </section>
+        <section>
+          <form id="inputLogIn">
+            <input type="text" className="input" id="mail" name="email" placeholder="E-mail" onChange={handleChange} />
+            <input type="password" className="input" id="passwordLogin" name="password" placeholder="Password" onChange={handleChange} />
+          </form>
+        </section>
 
-      <section id="buttonSect">
-        <button id="login" onClick={handleSubmit}>Login</button>
-        <button id="SignInB" onClick={handleSignIn}>Sign In</button>
+        <section id="buttonSect">
+          <button type="button" id="loginButton" onClick={handleSubmit}>Login</button>
+        </section>
       </section>
-
     </div>
   );
 }

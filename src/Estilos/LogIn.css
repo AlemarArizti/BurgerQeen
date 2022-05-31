@@ -1,0 +1,34 @@
+.login{
+margin-top:25%;
+margin-left:42%;
+}
+
+#welcome{
+ font-size: 25px;
+}
+#welcomeText{
+ font-size: 12px;
+ margin-top: 25px;
+}
+
+#inputLogIn{
+    width: 300px;
+    margin-top: 20px;
+}
+.input{
+ width:250px;
+ height: 30px;
+ border-radius: 45px;
+ border:none;
+ margin-top: 20px;
+}
+
+#loginButton{
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}

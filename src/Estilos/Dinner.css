@@ -5,7 +5,7 @@ header{
     height:80px;
     width: 100%;
     margin:0px;
-    background: linear-gradient(0deg, rgba(135, 126, 45, 0.3), rgba(135, 126, 45, 0.3)), #FF3742;
+    background: linear-gradient(0deg, rgba(255, 55, 66, 0.3), rgba(255, 55, 66, 0.3)), #2D3887;
 }
 
 #coffeeHeaderText{
@@ -21,16 +21,16 @@ header{
 }
 
 
-
+   
 /*Esta es la seccion en donde se encuentran todos los elementos del menu*/
-#itemsBreakfastMenu{
+#itemsDinnerMenu{
     display:flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 60%;
 }
 
 /*Estos son los elementos individuales del menu */
-.itemBreakfast{
+.itemDinner{
     background-color: #E4D1D1;
     height:250px;
     width:150px;
@@ -44,6 +44,7 @@ header{
     text-align: center;
     margin: 3px;
 }
+
 
 /*Imagenes*/
 .imgMenu{
