@@ -19,6 +19,7 @@
     height: 50px;
     background: linear-gradient(0deg, #4B3C81, #4B3C81), #2D3887;
 }
+
 #orderTitle{
     display: flex;
     align-items: center;
@@ -27,6 +28,15 @@
     font-weight: 800;
     font-size: 30px; 
     text-align: center;
+}
+
+#orderNumber {
+    display: flex;
+    justify-content: flex-start;
+    margin-top:100px;
+    margin-bottom: 0%;
+    font-weight: 800;
+    font-size: 30px; 
 }
 
 #orderClient{
@@ -54,12 +64,29 @@ input:focus {
     outline: none;
 }
 
+#orderDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+    height: 800px;
+    background-color: #4B3C81;
+}
+
+h4{
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 0%;
+}
+
+.checkImg {
+    width: 30px;
+}
+
 
 .addButton, .removeButton{
-    width: 50px;
-    height: 50px;
+    width: 30px;
     font-weight: bold;
-    font-size: 25px;
     text-align: center;
 }
 
