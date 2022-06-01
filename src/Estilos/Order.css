@@ -1,9 +1,13 @@
 /*Order*/
 #orderSec{
-    width: 530px;
+    width: 500px;
     height: 800px;
     background-color: #4B3C81;
     color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .itemOrder{
@@ -14,20 +18,71 @@
     width: 100%;
     height: 50px;
     background: linear-gradient(0deg, #4B3C81, #4B3C81), #2D3887;
-   
 }
 #orderTitle{
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    margin-top:100px;
+    font-weight: 800;
+    font-size: 30px; 
+    text-align: center;
 }
 
+#orderClient{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input {
+    width: 314px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    border-style: none;
+    padding-left: 23px;
+}
+
+::placeholder {
+    padding:0%;
+}
+
+input:focus {
+    outline: none;
+}
+
+
 .addButton, .removeButton{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     font-weight: bold;
     font-size: 25px;
     text-align: center;
 }
 
+button,
+.newClientButton {
+    border-radius: 50px;
+    background-color: #000;
+    border-style: none;
+    color: #fff;
+    font-weight: 800;
+    padding-left: 0;
+}
+
+.newOrderButton {
+    width: 120px;
+    height: 56px;
+    font-size: 32px;
+    
+}
+
+.newClientButton {
+    margin-top: 40px;
+    width: 154px;
+    height: 40px;
+    font-size: 18px;
+}

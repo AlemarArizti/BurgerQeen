@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
 .App {
   text-align: center;
 }
