@@ -1,0 +1,42 @@
+#buttonsMenuSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+
+
+.menuButtons {
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #b5afaf;
+    color: white;
+    font-weight: bold;
+}
+
+#dinnerB {
+    width: 150px;
+}
+
+.menuButtons:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.menuButtons:focus {
+    background-color: black;
+}
+
+
+
+/*Aquí estan metidas dos grandes secciones: la del menu y la cuenta */
+#menuAndOrderSection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}

@@ -3,7 +3,7 @@
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { useAuth } from '../Context/authContext';
-import '../Estilos/LogIn.css';
+import '../Styles/LogIn.css';
 import Logo from '../Assets/Logo/logofull-white.svg';
 
 export default function LogIn() {

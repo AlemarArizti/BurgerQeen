@@ -2,7 +2,7 @@
 import check from '../Assets/Icons/check.svg';
 import add from '../Assets/Icons/add.svg';
 import remove from '../Assets/Icons/remove.svg';
-import '../Estilos/Order.css';
+import '../Styles/Order.css';
 
 export default function OrderDetails() {
   return (

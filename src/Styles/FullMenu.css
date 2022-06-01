@@ -1,18 +1,18 @@
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height:80px;
+    height: 80px;
     width: 100%;
-    margin:0px;
+    margin: 0px;
     background: linear-gradient(0deg, rgba(135, 126, 45, 0.3), rgba(135, 126, 45, 0.3)), #FF3742;
 }
 
-#coffeeHeaderText{
-    color:White;
+#coffeeHeaderText {
+    color: White;
 }
 
-#search{
+#search {
     background-color: white;
     height: 40px;
     width: 250px;
@@ -23,22 +23,44 @@ header{
 
 
 /*Esta es la seccion en donde se encuentran todos los elementos del menu*/
-#itemsBreakfastMenu{
-    display:flex;
+#itemsBreakfastMenu {
+    display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
 /*Estos son los elementos individuales del menu */
-.itemBreakfast{
+.itemBreakfast {
     background-color: #E4D1D1;
-    height:250px;
-    width:150px;
+    height: 250px;
+    width: 150px;
     margin: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.cost, h5{
+.itemBreakfast:hover {
+    background-color: rgba(252, 54, 28, 0.755);
+}
+
+.itemDinner {
+    background-color: #dbd1e4;
+    height: 250px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.itemDinner:hover {
+    background-color: rgba(43, 5, 141, 0.782);
+}
+
+
+
+.cost,
+h5 {
     font-size: 18px;
     font-family: 'Nunito-VariableFont_wght.ttf';
     text-align: center;
@@ -46,8 +68,8 @@ header{
 }
 
 /*Imagenes*/
-.imgMenu{
-    width:125px;
+.imgMenu {
+    width: 125px;
     height: 100px;
     margin: 10px;
     border-radius: 10px;

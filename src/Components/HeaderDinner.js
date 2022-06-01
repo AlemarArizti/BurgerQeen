@@ -1,4 +1,4 @@
-import '../Estilos/Dinner.css';
+import '../Styles/Dinner.css';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../Context/authContext';
 import Logo from '../Assets/Logo/logotype-white.svg';
@@ -12,7 +12,7 @@ export default function HeaderDinner() {
   };
   return (
     <div>
-      <header>
+      <header className="headerDinner">
         <img src={Logo} alt="Logo" className="imgMenu" />
         <h1 id="coffeeHeaderText">It´s dinner time!</h1>
         <input type="text" id="search" placeholder="Busca por producto..." />

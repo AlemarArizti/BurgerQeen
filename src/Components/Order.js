@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../Estilos/Order.css';
+import '../Styles/Order.css';
 
 export default function Order() {
   const [client, setClient] = useState(true);
