@@ -1,0 +1,70 @@
+ .headerDinner {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     height: 80px;
+     width: 100%;
+     margin: 0px;
+     background: linear-gradient(0deg, rgba(255, 55, 66, 0.3), rgba(255, 55, 66, 0.3)), #2D3887;
+ }
+
+ #coffeeHeaderText {
+     color: White;
+ }
+
+ #search {
+     background-color: white;
+     height: 40px;
+     width: 250px;
+     border: none;
+     border-radius: 15px;
+ }
+
+ /*grid que permite que haya 2 columnas: cards de items y order */
+ #dinnerSection {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     grid-gap: 20px;
+ }
+
+ /*Esta es la seccion en donde se encuentran todos los elementos del menu*/
+ #itemsDinnerMenu {
+     display: flex;
+     flex-wrap: wrap;
+     padding-right: 0%;
+     margin-left: 50px;
+     margin-top: 20px;
+ }
+
+ /*div que contiene order y permite el comportamiento del grid*/
+ .orderContainer {
+     margin-right: 50px;
+     margin-top: 5px;
+ }
+
+
+ /*Estos son los elementos individuales del menu */
+ .itemDinner {
+     background-color: #E4D1D1;
+     height: 250px;
+     width: 150px;
+     margin: 5px;
+     border-radius: 5px;
+ }
+
+ .cost,
+ h5 {
+     font-size: 18px;
+     font-family: 'Nunito-VariableFont_wght.ttf';
+     text-align: center;
+     margin: 3px;
+ }
+
+
+ /*Imagenes*/
+ .imgMenu {
+     width: 125px;
+     height: 100px;
+     margin: 10px;
+     border-radius: 10px;
+ }

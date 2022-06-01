@@ -1,9 +1,9 @@
 // import { useNavigate } from 'react-router-dom';
-import '../Styles/Dinner.css';
-import '../Styles/Menu.css';
-import { useNavigate } from 'react-router-dom';
-import HeaderDinner from './HeaderDinner';
-import Order from './Order';
+import '../Styles/FullMenu.css';
+import CafeAmericano from '../Assets/CafeAmericano.jpg';
+import CafeLeche from '../Assets/CafeConLeche.jpg';
+import Sandwich from '../Assets/Sandwich.jpg';
+import Jugo from '../Assets/Jugo.jpeg';
 import HamburguesaSencilla from '../Assets/HamburgesaSencilla.png';
 import HamburgesaDoble from '../Assets/HamburgesaDoble.jpg';
 import Papas from '../Assets/Papas.jpg';
@@ -13,29 +13,35 @@ import Agua750 from '../Assets/Agua700.jpg';
 import soda500 from '../Assets/soda500.webp';
 import soda750 from '../Assets/Soda750.jpg';
 
-export default function Dinner() {
-  // NAVEGA
-  const navigate = useNavigate();
-
-  const handleMorningMenu = () => {
-    navigate('/Breakfast');
-  };
-
-  const handleDinnerMenu = () => {
-    navigate('/Dinner');
-  };
-
+export default function FullMenu() {
   return (
-    <body>
-      <HeaderDinner />
+    <div>
+      <section id="menuAndOrderSection">
+        <section id="itemsBreakfastMenu">
 
-      <section id="buttonsMenuSec">
-        <button type="button" className="menuButtons" id="breakfastB" onClick={handleMorningMenu}>Desayuno</button>
-        <button type="button" className="menuButtons" id="dinnerB" onClick={handleDinnerMenu}>Almuerzo/Cena</button>
-      </section>
+          <section className="itemBreakfast">
+            <img src={CafeAmericano} alt="coffe" className="imgMenu" />
+            <h5>Café americano</h5>
+            <p className="cost">$5</p>
+          </section>
 
-      <section id="dinnerSection">
-        <section id="itemsDinnerMenu">
+          <section className="itemBreakfast">
+            <img src={CafeLeche} alt="coffe" className="imgMenu" />
+            <h5>Café con leche</h5>
+            <p className="cost">$7</p>
+          </section>
+
+          <section className="itemBreakfast">
+            <img src={Sandwich} alt="coffe" className="imgMenu" />
+            <h5>Sandwich de jamón y queso</h5>
+            <p className="cost">$10</p>
+          </section>
+
+          <section className="itemBreakfast">
+            <img src={Jugo} alt="coffe" className="imgMenu" />
+            <h5>Jugo de frutas natural</h5>
+            <p className="cost">$7</p>
+          </section>
 
           <section className="itemDinner">
             <img src={HamburguesaSencilla} alt="HamburgesaSencilla" className="imgMenu" />
@@ -84,11 +90,9 @@ export default function Dinner() {
             <h5>Soda 750ml</h5>
             <p className="cost">$10</p>
           </section>
+
         </section>
-        <div className="orderContainer">
-          <Order />
-        </div>
       </section>
-    </body>
+    </div>
   );
 }

@@ -1,4 +1,4 @@
-import '../Estilos/Breakfast.css';
+import '../Styles/Breakfast.css';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../Context/authContext';
 import Logo from '../Assets/Logo/logotype-white.svg';
@@ -12,14 +12,11 @@ export default function HeaderBreakfast() {
     navigate('/');
   };
   return (
-    <div>
-      <header>
-        <img src={Logo} alt="Logo" className="imgMenu" />
-        <h1 id="coffeeHeaderText">It´s coffee time!</h1>
-        <input type="text" id="search" placeholder="Busca por producto..." />
-        <button type="button" id="logOutB" onClick={handleLogout}>log out </button>
-      </header>
-
-    </div>
+    <header>
+      <img src={Logo} alt="Logo" className="imgMenu" />
+      <h1 id="coffeeHeaderText">It´s coffee time!</h1>
+      <input type="text" id="search" placeholder="Busca por producto..." />
+      <button type="button" id="logOutB" onClick={handleLogout}>log out </button>
+    </header>
   );
 }
