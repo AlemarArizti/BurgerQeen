@@ -1,0 +1,90 @@
+{
+    "breakfast": [
+      {
+        "id": 1,
+        "dish_name": "Café Americano",
+        "type": "Para tomar",
+        "price": "$5",
+        "image": "#"
+      },
+      {
+        "id": 2,
+        "dish_name": "Café con Leche",
+        "type": "Para tomar",
+        "price": "$7",
+        "image": "#"
+      },
+      {
+        "id": 3,
+        "dish_name": "Sandwich de Jamón y Queso",
+        "type": "Alimento",
+        "price": "$10",
+        "image": "#"
+      },
+      {
+        "id": 4,
+        "dish_name": "Jugo de Frutas Natural",
+        "type": "Para tomar",
+        "price": "$10",
+        "image": "#"
+      }
+    ],
+    "Dinner": [
+        {
+          "id": 5,
+          "dish_name": "Bebida Gaseosa 750ml",
+          "type": "Para tomar",
+          "price": "$10",
+          "image": "#"
+        },
+        {
+          "id": 6,
+          "dish_name": "Bebida Gaseosa 500ml",
+          "type": "Para tomar",
+          "price": "$7",
+          "image": "#"
+        },
+        {
+          "id": 7,
+          "dish_name": "Agua 750ml",
+          "type": "Para tomar",
+          "price": "$7",
+          "image": "#"
+        },
+        {
+          "id": 8,
+          "dish_name": "Agua 500ml",
+          "type": "Para tomar",
+          "price": "$5",
+          "image": "#"
+        },
+        {
+            "id": 9,
+            "dish_name": "Hamburguesa Simple",
+            "type": "Hamburguesa",
+            "price": "$10",
+            "image": "#"
+        },
+        {
+            "id": 10,
+            "dish_name": "Hamburguesa Doble",
+            "type": "Hamburguesa",
+            "price": "$15",
+            "image": "#"
+          },
+          {
+            "id": 11,
+            "dish_name": "Papas Fritas",
+            "type": "Acompañamiento",
+            "price": "$5",
+            "image": "#"
+          },
+          {
+            "id": 12,
+            "dish_name": "Aros de Cebolla",
+            "type": "Acompañamiento",
+            "price": "$5",
+            "image": "#"
+          }
+      ]
+  }
