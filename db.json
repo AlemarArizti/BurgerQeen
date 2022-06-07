@@ -1,90 +1,100 @@
 {
-    "breakfast": [
-      {
-        "id": 1,
-        "name": "Café Americano",
+  "FullMenu": [
+    
+      {"id": 1,
+        "dish_name": "Café Americano",
         "type": "Para tomar",
         "price": "$5",
-        "image": "https://images.unsplash.com/photo-1519333796630-4b7d19ad1bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+        "image": "#",
+        "menu": "Breakfast"
       },
       {
         "id": 2,
-        "name": "Café con Leche",
+        "dish_name": "Café con Leche",
         "type": "Para tomar",
         "price": "$7",
-        "image": "#"
+        "image": "#",
+        "menu": "Breakfast"
       },
       {
         "id": 3,
-        "name": "Sandwich de Jamón y Queso",
+        "dish_name": "Sandwich de Jamón y Queso",
         "type": "Alimento",
         "price": "$10",
-        "image": "#"
+        "image": "#",
+        "menu": "Breakfast"
       },
       {
         "id": 4,
-        "name": "Jugo de Frutas Natural",
+        "dish_name": "Jugo de Frutas Natural",
         "type": "Para tomar",
         "price": "$10",
-        "image": "#"
-      }
-    ],
-    "dinner": [
-        {
-          "id": 5,
-          "name": "Bebida Gaseosa 750ml",
-          "type": "Para tomar",
-          "price": "$10",
-          "image": "#"
-        },
-        {
+        "image": "#",
+        "menu": "Breakfast"
+      },
+      {
+        "id": 5,
+        "dish_name": "Bebida Gaseosa 750ml",
+        "type": "Para tomar",
+        "price": "$10",
+        "image": "#",
+        "menu": "Dinner"
+      },
+      {
           "id": 6,
-          "name": "Bebida Gaseosa 500ml",
+          "dish_name": "Bebida Gaseosa 500ml",
           "type": "Para tomar",
           "price": "$7",
-          "image": "#"
-        },
-        {
+          "image": "#",
+          "menu": "Dinner"
+      },
+      {
           "id": 7,
-          "name": "Agua 750ml",
+          "dish_name": "Agua 750ml",
           "type": "Para tomar",
           "price": "$7",
-          "image": "#"
-        },
-        {
+          "image": "#",
+          "menu": "Dinner"
+      },
+      {
           "id": 8,
-          "name": "Agua 500ml",
+          "dish_name": "Agua 500ml",
           "type": "Para tomar",
           "price": "$5",
-          "image": "#"
-        },
-        {
+          "image": "#",
+          "menu": "Dinner"
+      },
+      {
             "id": 9,
-            "name": "Hamburguesa Simple",
+            "dish_name": "Hamburguesa Simple",
             "type": "Hamburguesa",
             "price": "$10",
-            "image": "#"
-        },
-        {
+            "image": "#",
+            "menu": "Dinner"
+      },
+      {
             "id": 10,
-            "name": "Hamburguesa Doble",
+            "dish_name": "Hamburguesa Doble",
             "type": "Hamburguesa",
             "price": "$15",
-            "image": "#"
-          },
-          {
+            "image": "#",
+            "menu": "Dinner"
+      },
+      {
             "id": 11,
-            "name": "Papas Fritas",
+            "dish_name": "Papas Fritas",
             "type": "Acompañamiento",
             "price": "$5",
-            "image": "#"
-          },
-          {
+            "image": "#",
+            "menu": "Dinner"
+      },
+      {
             "id": 12,
-            "name": "Aros de Cebolla",
+            "dish_name": "Aros de Cebolla",
             "type": "Acompañamiento",
             "price": "$5",
-            "image": "#"
-          }
-      ]
-  }
+            "image": "#",
+            "menu": "Dinner"
+      }
+  ]
+}

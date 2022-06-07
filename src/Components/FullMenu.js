@@ -34,8 +34,8 @@ export default function FullMenu() {
         <section id="itemsBreakfastMenu">
 
           <div>
-            <h1>Aqui muestro los datos</h1>
-            {dishes && dishes.breakfast.map((dish) => <Item dish={dish} key={dish.name} />)}
+            <h1>Aqui se van a mostrar los alimentos</h1>
+            {dishes && dishes.FullMenu.map((dish) => <Item dish={dish} key={dish.name} />)}
           </div>
 
           <section className="itemBreakfast">
