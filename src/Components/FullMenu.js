@@ -1,5 +1,6 @@
 // import { useNavigate } from 'react-router-dom';
 import '../Styles/FullMenu.css';
+// import '../../db.json';
 import { useEffect, useState } from 'react';
 import Item from './ItemDish';
 import CafeAmericano from '../Assets/CafeAmericano.jpg';
@@ -16,18 +17,18 @@ import soda500 from '../Assets/soda500.webp';
 import soda750 from '../Assets/Soda750.jpg';
 
 export default function FullMenu() {
-  const [dishes, setDishes] = useState('');
+  const [dishes, setDishes] = useState([]);
 
-  const getBreakfast = async () => {
-    const urlBreakfast = 'http://localhost:3000/breakfast';
-    const fetchBreakfast = await fetch(urlBreakfast).then((response) => response.json());
-    setDishes(fetchBreakfast);
+  const getFullMenu = async () => {
+    const urlFullMenu = 'http://localhost:3000/FullMenu';
+    const fetchFullMenu = await fetch(urlFullMenu).then((response) => response.json());
+    setDishes(fetchFullMenu);
   };
 
   useEffect(() => {
-    getBreakfast();
+    getFullMenu();
   }, []);
-
+  // console.log(dishes);
   return (
     <div>
       <section id="menuAndOrderSection">
@@ -35,7 +36,7 @@ export default function FullMenu() {
 
           <div>
             <h1>Aqui se van a mostrar los alimentos</h1>
-            {dishes && dishes.FullMenu.map((dish) => <Item dish={dish} key={dish.name} />)}
+            { dishes?.map((dish) => <Item dish={dish} key={dish.name} />)}
           </div>
 
           <section className="itemBreakfast">
