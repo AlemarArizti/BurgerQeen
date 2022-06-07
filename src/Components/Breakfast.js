@@ -20,7 +20,7 @@ export default function Breakfast() {
   };
 
   return (
-    <body>
+    <div>
       <HeaderBreakfast />
 
       <section id="buttonsMenuSec">
@@ -31,6 +31,10 @@ export default function Breakfast() {
       <div>
         <section id="menuAndOrderSection">
           <section id="itemsBreakfastMenu">
+
+            <div>
+              <h1>Aqui muestro los desayunos</h1>
+            </div>
 
             <section className="itemBreakfast">
               <img src={CafeAmericano} alt="coffe" className="imgMenu" />
@@ -59,6 +63,6 @@ export default function Breakfast() {
           </section>
         </section>
       </div>
-    </body>
+    </div>
   );
 }
