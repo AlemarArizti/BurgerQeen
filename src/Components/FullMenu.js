@@ -1,5 +1,7 @@
 // import { useNavigate } from 'react-router-dom';
 import '../Styles/FullMenu.css';
+import { useEffect, useState } from 'react';
+import Item from './ItemDish';
 import CafeAmericano from '../Assets/CafeAmericano.jpg';
 import CafeLeche from '../Assets/CafeConLeche.jpg';
 import Sandwich from '../Assets/Sandwich.jpg';
@@ -14,10 +16,27 @@ import soda500 from '../Assets/soda500.webp';
 import soda750 from '../Assets/Soda750.jpg';
 
 export default function FullMenu() {
+  const [dishes, setDishes] = useState('');
+
+  const getBreakfast = async () => {
+    const urlBreakfast = 'http://localhost:3000/breakfast';
+    const fetchBreakfast = await fetch(urlBreakfast).then((response) => response.json());
+    setDishes(fetchBreakfast);
+  };
+
+  useEffect(() => {
+    getBreakfast();
+  }, []);
+
   return (
     <div>
       <section id="menuAndOrderSection">
         <section id="itemsBreakfastMenu">
+
+          <div>
+            <h1>Aqui muestro los datos</h1>
+            {dishes && dishes.breakfast.map((dish) => <Item dish={dish} key={dish.name} />)}
+          </div>
 
           <section className="itemBreakfast">
             <img src={CafeAmericano} alt="coffe" className="imgMenu" />
