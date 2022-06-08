@@ -8,6 +8,11 @@ header {
     background: linear-gradient(0deg, rgba(135, 126, 45, 0.3), rgba(135, 126, 45, 0.3)), #FF3742;
 }
 
+.imgLogo {
+    width: 130px;
+    margin: 10px;
+  }
+
 #coffeeHeaderText {
     color: White;
 }
@@ -57,12 +62,11 @@ header {
     background-color: rgba(43, 5, 141, 0.782);
 }
 
-
-
 .cost,
 h5 {
-    font-size: 18px;
-    font-family: 'Nunito-VariableFont_wght.ttf';
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
     text-align: center;
     margin: 3px;
 }
