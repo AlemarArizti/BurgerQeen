@@ -13,7 +13,7 @@ export default function HeaderBreakfast() {
   };
   return (
     <header>
-      <img src={Logo} alt="Logo" className="imgMenu" />
+      <img src={Logo} alt="Logo" className="imgLogo" />
       <h1 id="coffeeHeaderText">It´s coffee time!</h1>
       <input type="text" id="search" placeholder="Busca por producto..." />
       <button type="button" id="logOutB" onClick={handleLogout}>log out </button>
