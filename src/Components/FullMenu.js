@@ -1,6 +1,7 @@
 import '../Styles/FullMenu.css';
 import { useEffect, useState } from 'react';
 import Item from './ItemDish';
+import Order from './Order';
 
 export default function FullMenu() {
   const [dishes, setDishes] = useState([]);
@@ -16,8 +17,11 @@ export default function FullMenu() {
   }, []);
   // console.log(dishes);
   return (
-    <div id="menuAndOrderSection">
-      { dishes?.map((dish) => <Item dish={dish} key={dish.id} />)}
+    <div className="menuAndOrderSection">
+      <section id="itemsFullMenu">
+        { dishes?.map((dish) => <Item dish={dish} key={dish.id} />)}
+      </section>
+      <Order />
     </div>
   );
 }

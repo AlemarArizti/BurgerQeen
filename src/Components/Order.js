@@ -6,7 +6,7 @@ export default function Order() {
 
   return (
     <div>
-      <section>
+      <section className="orderBackground">
 
         {client ? (
           <section id="orderSec">

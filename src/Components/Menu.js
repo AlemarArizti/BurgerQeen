@@ -32,10 +32,7 @@ export default function SignIn() {
         <button type="button" className="menuButtons" id="snacks">Acompañamientos</button>
         <button type="button" className="menuButtons" id="drinnks">Para Tomar</button>
       </section>
-
-      <section id="menuAndOrderSection">
-        <FullMenu />
-      </section>
+      <FullMenu />
     </body>
 
   );

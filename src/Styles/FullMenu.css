@@ -28,10 +28,12 @@ header {
 
 
 /*Esta es la seccion en donde se encuentran todos los elementos del menu*/
-#itemsBreakfastMenu {
+#itemsFullMenu {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
+    margin: 30px 0px 0px 20px;
 }
 
 /*Estos son los elementos individuales del menu */
@@ -42,6 +44,10 @@ header {
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .itemBreakfast:hover {
@@ -69,6 +75,13 @@ h5 {
     font-weight: 700;
     text-align: center;
     margin: 3px;
+}
+
+.menuAndOrderSection {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
 }
 
 /*Imagenes*/
