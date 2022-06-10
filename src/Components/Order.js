@@ -4,7 +4,7 @@ import '../Styles/Order.css';
 
 export default function Order() {
   const [order, setOrder] = useState(true);
-  const [details, setDetails] = useState(false);
+  const [details, setDetails] = useState(true);
   // const [client, setClient] = useState(true);
   // guardar cliente
   // mostrar la orden solo si el cliente se ha guardado en la api
@@ -29,24 +29,22 @@ export default function Order() {
 
         ) : (
           <section id="orderSec">
-            <form id="orderClient">
-              <h1 id="orderTitle">Agrega el nombre del cliente</h1>
-              <input
-                type="text"
-                placeholder="Ingresa aqui el nombre del cliente"
-                className="placeClient"
-                id="placeClient"
-              />
-              <input
-                type="submit"
-                className="newClientButton"
-                value="Continuar"
-              />
-              <button type="button" className="newClientButton" id="newOrder" onClick={() => setDetails(!details)}>
-                {details ? '' : 'Continuar'}
-              </button>
-            </form>
-            { details ? (<OrderDetails />) : null}
+            { details ? (
+              <form id="orderClient">
+                <h1 id="orderTitle">Agrega el nombre del cliente</h1>
+                <input
+                  type="text"
+                  placeholder="Ingresa aqui el nombre del cliente"
+                  className="placeClient"
+                  id="placeClient"
+                />
+                <button type="button" className="newClientButton" id="newOrder" onClick={() => setDetails(!details)}>
+                  Continuar
+                </button>
+              </form>
+            ) : (
+              <OrderDetails />
+            )}
           </section>
         )}
 
