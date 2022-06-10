@@ -43,7 +43,7 @@ export default function Order() {
                 value="Continuar"
               />
               <button type="button" className="newClientButton" id="newOrder" onClick={() => setDetails(!details)}>
-                {details ? 'Esconder' : 'Continuar'}
+                {details ? '' : 'Continuar'}
               </button>
             </form>
             { details ? (<OrderDetails />) : null}
