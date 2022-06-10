@@ -1,17 +1,28 @@
 import { useState } from 'react';
+import OrderDetails from './OrderDetails';
 import '../Styles/Order.css';
 
 export default function Order() {
-  const [client, setClient] = useState(true);
+  const [order, setOrder] = useState(true);
+  const [details, setDetails] = useState(false);
+  // const [client, setClient] = useState(true);
+  // guardar cliente
+  // mostrar la orden solo si el cliente se ha guardado en la api
+  // si cliente ya se guardo, entonces muestrame los detalles de la orden
+
+  /* const handleSaveClient = async (e) => {
+    e.preventDefault();
+    console.log(e);
+  }; */
 
   return (
     <div>
       <section className="orderBackground">
 
-        {client ? (
+        {order ? (
           <section id="orderSec">
             <h1 id="orderTitle">Haz clic aquí para agregar una nueva orden</h1>
-            <button type="button" className="newOrderButton" id="newOrder" onClick={() => setClient(!client)}>
+            <button type="button" className="newOrderButton" id="newOrder" onClick={() => setOrder(!order)}>
               +
             </button>
           </section>
@@ -27,11 +38,15 @@ export default function Order() {
                 id="placeClient"
               />
               <input
-                type="button"
+                type="submit"
                 className="newClientButton"
                 value="Continuar"
               />
+              <button type="button" className="newClientButton" id="newOrder" onClick={() => setDetails(!details)}>
+                {details ? 'Esconder' : 'Continuar'}
+              </button>
             </form>
+            { details ? (<OrderDetails />) : null}
           </section>
         )}
 
