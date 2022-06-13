@@ -31,12 +31,3 @@
 .menuButtons:focus {
     background-color: black;
 }
-
-
-
-/*Aquí estan metidas dos grandes secciones: la del menu y la cuenta */
-#menuAndOrderSection {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}

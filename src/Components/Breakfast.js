@@ -27,42 +27,34 @@ export default function Breakfast() {
         <button type="button" className="menuButtons" id="breakfastB" onClick={handleMorningMenu}>Desayuno</button>
         <button type="button" className="menuButtons" id="dinnerB" onClick={handleDinnerMenu}>Almuerzo/Cena</button>
       </section>
-
-      <div>
-        <section id="menuAndOrderSection">
-          <section id="itemsBreakfastMenu">
-
-            <div>
-              <h1>Aqui muestro los desayunos</h1>
-            </div>
-
-            <section className="itemBreakfast">
-              <img src={CafeAmericano} alt="coffe" className="imgMenu" />
-              <h5>Café americano</h5>
-              <p className="cost">$5</p>
-            </section>
-
-            <section className="itemBreakfast">
-              <img src={CafeLeche} alt="coffe" className="imgMenu" />
-              <h5>Café con leche</h5>
-              <p className="cost">$7</p>
-            </section>
-
-            <section className="itemBreakfast">
-              <img src={Sandwich} alt="coffe" className="imgMenu" />
-              <h5>Sandwich de jamón y queso</h5>
-              <p className="cost">$10</p>
-            </section>
-
-            <section className="itemBreakfast">
-              <img src={Jugo} alt="coffe" className="imgMenu" />
-              <h5>Jugo de frutas natural</h5>
-              <p className="cost">$7</p>
-            </section>
-            <Order />
+      <section id="menuAndOrderSection">
+        <section id="itemsBreakfastMenu">
+          <section className="itemBreakfast">
+            <img src={CafeAmericano} alt="coffe" className="imgMenu" />
+            <h5>Café americano</h5>
+            <p className="cost">$5</p>
           </section>
+
+          <section className="itemBreakfast">
+            <img src={CafeLeche} alt="coffe" className="imgMenu" />
+            <h5>Café con leche</h5>
+            <p className="cost">$7</p>
+          </section>
+
+          <section className="itemBreakfast">
+            <img src={Sandwich} alt="coffe" className="imgMenu" />
+            <h5>Sandwich de jamón y queso</h5>
+            <p className="cost">$10</p>
+          </section>
+
+          <section className="itemBreakfast">
+            <img src={Jugo} alt="coffe" className="imgMenu" />
+            <h5>Jugo de frutas natural</h5>
+            <p className="cost">$7</p>
+          </section>
+          <Order />
         </section>
-      </div>
+      </section>
     </div>
   );
 }

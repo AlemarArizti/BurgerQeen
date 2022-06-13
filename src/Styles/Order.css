@@ -1,8 +1,13 @@
 /*Order*/
-#orderSec{
+
+.orderBackground {
     width: 500px;
-    height: 800px;
+    height: 100vh;
     background-color: #4B3C81;
+    border-top-left-radius: 5px;
+}
+
+#orderSec{
     color:white;
     display: flex;
     flex-direction: column;

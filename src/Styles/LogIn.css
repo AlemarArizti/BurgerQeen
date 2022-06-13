@@ -4,19 +4,22 @@ body{
 }
 
 #loginContainer{
-   background-image: url(../Assets/login-bg.jpg);
-   background-image: no-repeat;
-   background-image: fixed;
-   background-image: center;
-   -webkit-background-size: cover;
+    background: url(../Assets/login-bg.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
-   background-size: cover;
-   height: 800px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   
 }
+
+#loginSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 
 #logoLogin{
  width: 250px;
@@ -61,7 +64,6 @@ width:300px;
     font-weight: bold;
     margin-top:30px;
     text-align: center;
-    margin-left:25%;
 }
 
 ::placeholder{

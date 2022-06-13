@@ -2,7 +2,6 @@
 import React from 'react';
 
 function Item({ dish }) {
-  console.log(dish);
   return (
     <div>
       <section id="itemsBreakfastMenu">
