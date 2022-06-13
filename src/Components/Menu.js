@@ -18,7 +18,7 @@ export default function SignIn() {
   };
 
   return (
-    <body>
+    <div>
       <HeaderFullMenu />
 
       <section id="buttonsMenuSec">
@@ -33,7 +33,7 @@ export default function SignIn() {
         <button type="button" className="menuButtons" id="drinnks">Para Tomar</button>
       </section>
       <FullMenu />
-    </body>
+    </div>
 
   );
 }

@@ -26,7 +26,7 @@ export default function Dinner() {
   };
 
   return (
-    <body>
+    <div>
       <HeaderDinner />
 
       <section id="buttonsMenuSec">
@@ -89,6 +89,6 @@ export default function Dinner() {
           <Order />
         </div>
       </section>
-    </body>
+    </div>
   );
 }

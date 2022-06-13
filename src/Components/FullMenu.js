@@ -2,18 +2,19 @@ import '../Styles/FullMenu.css';
 import { useEffect, useState } from 'react';
 import Item from './ItemDish';
 import Order from './Order';
+import { getFullMenu } from '../lib/Fetching';
 
 export default function FullMenu() {
   const [dishes, setDishes] = useState([]);
 
-  const getFullMenu = async () => {
-    const urlFullMenu = 'http://localhost:3000/FullMenu';
-    const fetchFullMenu = await fetch(urlFullMenu).then((response) => response.json());
-    setDishes(fetchFullMenu);
+  const fetchingMenu = () => {
+    getFullMenu().then((data) => {
+      setDishes(data);
+    });
   };
 
   useEffect(() => {
-    getFullMenu();
+    fetchingMenu();
   }, []);
   // console.log(dishes);
   return (
