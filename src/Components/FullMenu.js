@@ -22,7 +22,9 @@ export default function FullMenu() {
       <section id="itemsFullMenu">
         { dishes?.map((dish) => <Item dish={dish} key={dish.id} />)}
       </section>
-      <Order />
+      <div className="orderContainer">
+        <Order />
+      </div>
     </div>
   );
 }

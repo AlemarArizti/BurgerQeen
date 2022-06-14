@@ -5,6 +5,14 @@
     margin-top: 20px;
 }
 
+.filterButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
 
 
 .menuButtons {
@@ -17,6 +25,7 @@
     background-color: #b5afaf;
     color: white;
     font-weight: bold;
+    margin-right: 10px;
 }
 
 #dinnerB {
