@@ -1,101 +1,100 @@
 {
   "FullMenu": [
-    {
-      "id": 1,
-      "dishName": "Café Americano",
-      "type": "Para tomar",
-      "price": "$5",
-      "image": "https://www.comunicaffe.com/wp-content/uploads/2015/12/coffee-cup.jpg",
-      "menu": "Breakfast"
-    },
-    {
-      "id": 2,
-      "dishName": "Café con Leche",
-      "type": "Para tomar",
-      "price": "$7",
-      "image": "https://elarepazo.es/wp-content/uploads/2020/08/latteart24311601920_bb341c77.jpg",
-      "menu": "Breakfast"
-    },
-    {
-      "id": 3,
-      "dishName": "Sandwich de Jamón y Queso",
-      "type": "Alimento",
-      "price": "$10",
-      "image": "https://www.hola.com/imagenes/cocina/recetas/20210208183946/sandwich-jamon-queso/1-72-559/sandwich-havar-adob-m.jpg",
-      "menu": "Breakfast"
-    },
-    {
-      "id": 4,
-      "dishName": "Jugo de Frutas Natural",
-      "type": "Para tomar",
-      "price": "$10",
-      "image": "https://www.gastrolabweb.com/u/fotografias/fotosnoticias/2021/6/29/15469.jpg",
-      "menu": "Breakfast"
-    },
-    {
-      "id": 5,
-      "dishName": "Bebida Gaseosa 750ml",
-      "type": "Para tomar",
-      "price": "$10",
-      "image": "https://edibleidaho.ediblecommunities.com/sites/default/files/styles/ariticle_hero_portrait__406x609_/public/images/article/Bucksnort.jpg",
-      "menu": "Dinner"
-    },
-    {
-      "id": 6,
-      "dishName": "Bebida Gaseosa 500ml",
-      "type": "Para tomar",
-      "price": "$7",
-      "image": "https://st2.depositphotos.com/1692343/7579/i/450/depositphotos_75790055-stock-photo-refreshing-bubbly-soda-pop.jpg",
-      "menu": "Dinner"
-    },
-    {
-      "id": 7,
-      "dishName": "Agua 750ml",
-      "type": "Para tomar",
-      "price": "$7",
-      "image": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2019/03/recetas-super-faciles-de-aguas-frescas-con-fruta.jpg",
-      "menu": "Dinner"
-    },
-    {
-      "id": 8,
-      "dishName": "Agua 500ml",
-      "type": "Para tomar",
-      "price": "$5",
-      "image": "http://www.bajounanube.com/wp-content/uploads/2018/07/agua-de-frutas-principal-opt.jpg",
-      "menu": "Dinner"
-    },
-    {
-      "id": 9,
-      "dishName": "Hamburguesa Simple",
-      "type": "Hamburguesa",
-      "price": "$10",
-      "image": "https://mincerecipes.info/wp-content/uploads/2021/12/craft-beef-burger-and-french-fries-on-a-black-background-1140x570.jpg",
-      "menu": "Dinner"
-    },
-    {
-      "id": 10,
-      "dishName": "Hamburguesa Doble",
-      "type": "Hamburguesa",
-      "price": "$15",
-      "image": "https://www.dolas.com.ar/wp-content/uploads/sites/19/2019/06/img-2-1.jpg",
-      "menu": "Dinner"
-    },
-    {
-      "id": 11,
-      "dishName": "Papas Fritas",
-      "type": "Acompañamiento",
-      "price": "$5",
-      "image": "https://www.homestratosphere.com/wp-content/uploads/2020/08/baking-fries-aug142020-min.jpg",
-      "menu": "Dinner"
-    },
-    {
-      "id": 12,
-      "dishName": "Aros de Cebolla",
-      "type": "Acompañamiento",
-      "price": "$5",
-      "image": "https://images.unsplash.com/photo-1639024471283-03518883512d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b25pb24lMjByaW5nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
-      "menu": "Dinner"
-    }
+    {"id": 1,
+        "dishName": "Café Americano",
+        "type": "Drink",
+        "price": "$5",
+        "image": "https://www.comunicaffe.com/wp-content/uploads/2015/12/coffee-cup.jpg",
+        "menu": "Breakfast"
+      },
+      {
+        "id": 2,
+        "dishName": "Café con Leche",
+        "type": "Drink",
+        "price": "$7",
+        "image": "https://elarepazo.es/wp-content/uploads/2020/08/latteart24311601920_bb341c77.jpg",
+        "menu": "Breakfast"
+      },
+      {
+        "id": 3,
+        "dishName": "Sandwich de Jamón y Queso",
+        "type": "Meal",
+        "price": "$10",
+        "image": "https://www.hola.com/imagenes/cocina/recetas/20210208183946/sandwich-jamon-queso/1-72-559/sandwich-havar-adob-m.jpg",
+        "menu": "Breakfast"
+      },
+      {
+        "id": 4,
+        "dishName": "Jugo de Frutas Natural",
+        "type": "Drink",
+        "price": "$10",
+        "image": "https://www.gastrolabweb.com/u/fotografias/fotosnoticias/2021/6/29/15469.jpg",
+        "menu": "Breakfast"
+      },
+      {
+        "id": 5,
+        "dishName": "Bebida Gaseosa 750ml",
+        "type": "Drink",
+        "price": "$10",
+        "image": "https://edibleidaho.ediblecommunities.com/sites/default/files/styles/ariticle_hero_portrait__406x609_/public/images/article/Bucksnort.jpg",
+        "menu": "Dinner"
+      },
+      {
+          "id": 6,
+          "dishName": "Bebida Gaseosa 500ml",
+          "type": "Drink",
+          "price": "$7",
+          "image": "https://st2.depositphotos.com/1692343/7579/i/450/depositphotos_75790055-stock-photo-refreshing-bubbly-soda-pop.jpg",
+          "menu": "Dinner"
+      },
+      {
+          "id": 7,
+          "dishName": "Agua 750ml",
+          "type": "Drink",
+          "price": "$7",
+          "image": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2019/03/recetas-super-faciles-de-aguas-frescas-con-fruta.jpg",
+          "menu": "Dinner"
+      },
+      {
+          "id": 8,
+          "dishName": "Agua 500ml",
+          "type": "Drink",
+          "price": "$5",
+          "image": "https://tizkka.com/tizkka-articles/cdWHUeXuwlTTmPEFLo4lVJChHlMtEGRo_article.jpg",
+          "menu": "Dinner"
+      },
+      {
+            "id": 9,
+            "dishName": "Hamburguesa Simple",
+            "type": "Meal",
+            "price": "$10",
+            "image": "https://mincerecipes.info/wp-content/uploads/2021/12/craft-beef-burger-and-french-fries-on-a-black-background-1140x570.jpg",
+            "menu": "Dinner"
+      },
+      {
+            "id": 10,
+            "dishName": "Hamburguesa Doble",
+            "type": "Meal",
+            "price": "$15",
+            "image": "https://www.dolas.com.ar/wp-content/uploads/sites/19/2019/06/img-2-1.jpg",
+            "menu": "Dinner"
+      },
+      {
+            "id": 11,
+            "dishName": "Papas Fritas",
+            "type": "Side",
+            "price": "$5",
+            "image": "https://www.homestratosphere.com/wp-content/uploads/2020/08/baking-fries-aug142020-min.jpg",
+            "menu": "Dinner"
+      },
+      {
+            "id": 12,
+            "dishName": "Aros de Cebolla",
+            "type": "Side",
+            "price": "$5",
+            "image": "https://images.unsplash.com/photo-1639024471283-03518883512d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b25pb24lMjByaW5nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+            "menu": "Dinner"
+      }
   ],
   "Orders": [
     {
@@ -123,4 +122,3 @@
       "id": 6
     }
   ]
-}

@@ -22,15 +22,15 @@ export default function SignIn() {
       <HeaderFullMenu />
 
       <section id="buttonsMenuSec">
-        <button type="button" className="menuButtons" id="breakfastB" onClick={handleMorningMenu}>Desayuno</button>
-        <button type="button" className="menuButtons" id="dinnerB" onClick={handleDinnerMenu}>Almuerzo/Cena</button>
+        <button type="button" className="menuButtons" id="breakfastB" onClick={handleMorningMenu}>Breakfast</button>
+        <button type="button" className="menuButtons" id="dinnerB" onClick={handleDinnerMenu}>Dinner</button>
       </section>
 
-      <section>
-        <button type="button" className="menuButtons" id="all">Ver todo</button>
-        <button type="button" className="menuButtons" id="burgers">Hamburguesas</button>
-        <button type="button" className="menuButtons" id="snacks">Acompañamientos</button>
-        <button type="button" className="menuButtons" id="drinnks">Para Tomar</button>
+      <section className="filterButtons">
+        <button type="button" className="menuButtons" id="all">See all</button>
+        <button type="button" className="menuButtons" id="burgers">Meals</button>
+        <button type="button" className="menuButtons" id="snacks">Side</button>
+        <button type="button" className="menuButtons" id="drinnks">Drink</button>
       </section>
       <FullMenu />
     </div>

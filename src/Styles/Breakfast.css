@@ -29,10 +29,20 @@ header {
 
 
 /*Esta es la seccion en donde se encuentran todos los elementos del menu*/
+#breakfastSection {
+display: flex;
+flex-direction: row;
+width: 100%;
+gap: 10px;
+}
+
+
+
 #itemsBreakfastMenu {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 /*Estos son los elementos individuales del menu */
@@ -67,3 +77,8 @@ h5 {
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* estilo contenedor order */
+.orderContainer{
+ margin-top: 14px;
+        }

@@ -33,7 +33,7 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    margin: 30px 0px 0px 20px;
+    /*margin: 30px 0px 0px 20px; */
 }
 
 /*Estos son los elementos individuales del menu */
