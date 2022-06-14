@@ -1,7 +1,6 @@
 {
   "FullMenu": [
-    
-      {"id": 1,
+    {"id": 1,
         "dishName": "Café Americano",
         "type": "Drink",
         "price": "$5",
@@ -96,5 +95,30 @@
             "image": "https://images.unsplash.com/photo-1639024471283-03518883512d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b25pb24lMjByaW5nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
             "menu": "Dinner"
       }
+  ],
+  "Orders": [
+    {
+      "client": "Alemar",
+      "id": 1
+    },
+    {
+      "client": "Mariana",
+      "id": 2
+    },
+    {
+      "client": "Daniel",
+      "id": 3
+    },
+    {
+      "client": "Roxana",
+      "id": 4
+    },
+    {
+      "client": "Eli",
+      "id": 5
+    },
+    {
+      "client": "Gatiwis",
+      "id": 6
+    }
   ]
-}
